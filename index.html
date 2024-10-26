@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DELLAILI - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          DELLAILI
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          ellailidaoud10@gmail.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +212681612362
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <!-- Add the links for Skills, Projects and Recommendation here -->
+          <a class="topmenu" href="#skills">Skills</a>
+          <a class="topmenu" href="#projects">Projects</a>
+          <a class="topmenu" href="#recommendations">Recommendation</a>
+
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="https://www.pwc.com/mt/en/services/cyber-security/cyber-attack-.gif" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, I'm Daoud ELLAILI! <img src="html_finalprojimages/waving-hand.png" width="60px"/>
+          </h1>
+          <p>
+            I'm a passionate cybersecurity professional with a strong foundation in securing systems,
+             networks, and data for organizations of all sizes. My journey in cybersecurity is driven by
+              a commitment to protecting sensitive information and proactively mitigating threats in an 
+              ever-evolving digital landscape. I bring hands-on experience with intrusion detection, threat analysis,
+               and ethical hacking, coupled with a keen interest in the latest cybersecurity tools and techniques.          
+            </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="Images/Python.png"/>
+          <h6>Python, Bash, PowerShell</h6>
+          <p>3 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="Images/assembly.png"/>
+          <h6>C/C++ & Assembly</h6>
+          <p>3 years experience</p>
+        </div>  
+
+        <!-- Add more skills here -->
+        <div class="skill">
+            <img src="Images/network-security.jpg"/>
+            <h6>Network Security</h6>
+            <p>2 years experience</p>
+          </div>  
+
+          <div class="skill">
+            <img src="Images/crypto.png"/>
+            <h6>Cryptography</h6>
+            <p>1 years experience</p>
+          </div>  
+
+          <div class="skill">
+            <img src="Images/Malware.png"/>
+            <h6>Malware Analysis</h6>
+            <p>0 years experience</p>
+          </div>  
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+            <div class="project-card">
+                <h3>Backdoor Project</h3>
+                <ul>
+                  <li>Developed a secure backdoor application using Socket programming, enabling remote access and control while maintaining robust security measures to prevent unauthorized access.</li>
+                </ul>
+              </div>
+            <div class="project-card">
+            <h3>Active Directory Project</h3>
+            <ul>
+              <li>Released an Active Directory project aimed at enhancing organizational security and user management, implementing policies and procedures for identity and access management..</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>VPN Site to Site Exploration</h3>
+            <ul>
+              <li>Designed and implemented a secure VPN solution for reliable data transmission between remote sites.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Network Infrastructure</h3>
+            <ul>
+              <li>Released a comprehensive network infrastructure project focusing on the design and implementation of robust networking solutions, utilizing various routers, switches, and access points to ensure connectivity and performance.</li>
+            </ul>
+          </div>
+          <div class="project-card">
+            <h3>Web Application for Student Housing</h3>
+            <ul>
+              <li>Deployed a web application designed for student co-housing, facilitating connections between students and available housing options near higher education institutions, incorporating user-friendly interfaces and secure database management.</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Daoud's expertise in cybersecurity is unparalleled. His innovative approach to developing secure applications has significantly improved our infrastructure. He consistently delivers high-quality work and is a valuable team player.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Daoud's ability to integrate complex cybersecurity solutions is impressive. He not only identifies vulnerabilities but also implements strategic measures to enhance our security posture. A true professional!
+            <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Working with Daoud was a game changer for our projects. His deep understanding of network security and attention to detail helped us mitigate risks effectively. Highly recommended!
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <!--Add the code here for the logo to appear and the icon to be actionable-->
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3><!-- Add appropriate text here--></h3>
+      Thanks for your recommendation!
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
